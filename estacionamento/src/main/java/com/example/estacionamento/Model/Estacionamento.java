@@ -28,12 +28,14 @@ public class Estacionamento {
     @Column(name = "data_entrada")
     private LocalDate dataEntrada;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Column(name = "horario_entrada")
     private LocalTime horarioEntrada;
 
     @Column(name = "data_saida")
     private LocalDate dataSaida;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm:ss")
     @Column(name = "horario_saida")
     private LocalTime horarioSaida;
 
